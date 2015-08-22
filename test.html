@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>test</title>
+
+</head>
+<body>
+<form name="myform" method="post">
+Number:<input type="text" name="n"/>
+    <input type="button" value="submit" onclick="myFunction()"/>
+</form>
+<div id="demo">
+
+</div>
+<script>
+    function myFunction() {
+        var fruits = ["1", "2", "3", "4","5","6","7"];
+        var value=myform.n.value;
+        if(value!="") {
+            var result=fruits.splice(value);
+        }
+        document.getElementById("demo").innerHTML = fruits;
+    }
+
+
+</script>
+
+</body>
+</html>
